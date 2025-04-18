@@ -1,45 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';  // Import Link here
 import { motion } from 'framer-motion';
+import Navbar from '../pages/Navbar';
 
 function HomePage() {
   return (
     <div className="font-sans bg-gray-100 min-h-screen">
       {/* Navbar */}
-
-      <div className="bg-green-600 text-white p-6 shadow-lg">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <h1 className="text-3xl font-bold">KrishiBondhu</h1>
-          <nav className="space-x-6">
-            <Link
-              to="/"
-              className="hover:text-green-200 transition-colors duration-300"
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className="hover:text-green-200 transition-colors duration-300"
-            >
-              About
-            </Link>
-            <Link
-              to="/contact"
-              className="hover:text-green-200 transition-colors duration-300"
-            >
-              Contact
-            </Link>
-          </nav>
-        </div>
-      </div>
-
+      <Navbar />
 
       {/* Hero Section */}
       <section className="bg-green-600 text-white py-20 text-center">
         <motion.h2
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
           className="text-4xl font-extrabold mb-4"
         >
           Welcome to KrishiBondhu!
@@ -47,7 +22,7 @@ function HomePage() {
         <motion.p
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
           className="text-xl mb-6"
         >
           A hyper-local marketplace connecting farmers and buyers directly.
