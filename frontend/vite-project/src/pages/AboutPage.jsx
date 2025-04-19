@@ -12,22 +12,18 @@ function AboutUsPage() {
 
   return (
     <div className="about-us-page bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 min-h-screen">
-      {/* Navbar */}
       <Navbar />
 
-      {/* Main Content */}
       <motion.div
         className="about-content max-w-5xl mx-auto py-12 px-6"
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
       >
-        {/* Page Title */}
         <h1 className="text-5xl font-bold text-center text-green-600 mb-8">
           🌾 About Us
         </h1>
 
-        {/* Project Description */}
         <section className="text-lg text-gray-700 leading-relaxed mb-12">
           <p className="mb-4">
             Welcome to <span className="font-bold text-green-800">KrishiBondhu</span> – A Hyperlocal Agri-Marketplace! 
@@ -41,14 +37,12 @@ function AboutUsPage() {
           </p>
         </section>
 
-        {/* Team Members Section */}
         <section className="team-members">
           <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">
             Meet the Team
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {/* Team Member 1 */}
             <motion.div
               className="team-member flex items-center space-x-6"
               initial="hidden"
@@ -70,7 +64,6 @@ function AboutUsPage() {
               </div>
             </motion.div>
 
-            {/* Team Member 2 */}
             <motion.div
               className="team-member flex items-center space-x-6"
               initial="hidden"
@@ -94,7 +87,6 @@ function AboutUsPage() {
           </div>
         </section>
 
-        {/* Closing Note */}
         <section className="mt-12 text-center">
           <p className="text-lg text-gray-700">
             Together, we are committed to bridging the gap between farmers and buyers, fostering growth and connectivity in rural Bengal. Thank you for being a part of our journey!

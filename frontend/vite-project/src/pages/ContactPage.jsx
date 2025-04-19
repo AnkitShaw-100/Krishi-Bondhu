@@ -1,9 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar"; // Assuming Navbar is in the components folder
-import { motion } from "framer-motion"; // For animations
+import Navbar from "./Navbar";
+import { motion } from "framer-motion";
 
 function ContactPage() {
-  // Scroll animation effect
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
@@ -11,27 +10,22 @@ function ContactPage() {
 
   return (
     <div className="contact-page bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 min-h-screen">
-      {/* Navbar */}
       <Navbar />
 
-      {/* Main Content */}
       <motion.div
         className="max-w-4xl mx-auto py-10 px-6"
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
       >
-        {/* Page Title */}
         <h1 className="text-3xl font-bold text-center text-green-600 mb-6">
           📞 Contact Us
         </h1>
 
-        {/* Description */}
         <p className="text-base text-gray-700 text-center mb-8">
           Have questions? We’d love to hear from you! Fill out the form below, and we’ll get back to you as soon as possible.
         </p>
 
-        {/* Contact Form */}
         <motion.form
           className="space-y-6"
           initial="hidden"
@@ -39,7 +33,6 @@ function ContactPage() {
           variants={fadeInUp}
           transition={{ delay: 0.5 }}
         >
-          {/* Name Field */}
           <div className="form-group">
             <label htmlFor="name" className="block text-sm font-medium text-gray-600 mb-1">
               Your Name
@@ -53,7 +46,6 @@ function ContactPage() {
             />
           </div>
 
-          {/* Email Field */}
           <div className="form-group">
             <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-1">
               Your Email
@@ -67,7 +59,6 @@ function ContactPage() {
             />
           </div>
 
-          {/* Message Field */}
           <div className="form-group">
             <label htmlFor="message" className="block text-sm font-medium text-gray-600 mb-1">
               Your Message
@@ -81,7 +72,6 @@ function ContactPage() {
             />
           </div>
 
-          {/* Submit Button */}
           <div className="text-center">
             <motion.button
               type="submit"
@@ -94,7 +84,6 @@ function ContactPage() {
           </div>
         </motion.form>
 
-        {/* Additional Contact Info */}
         <section className="mt-12 text-center">
           <h2 className="text-xl font-semibold text-gray-800 mb-2">📍 Our Office</h2>
           <p className="text-sm text-gray-600">
