@@ -6,8 +6,8 @@ import Navbar from '../pages/Navbar';
 // Importing images correctly from src/assets
 import heroImage from '../assets/main-image.jpg';
 import image1 from '../assets/image-1.jpg';
-import image2 from '../assets/image-2.jpg';
-import image3 from '../assets/image-3.jpg';
+import cash from '../assets/cash.jpg';
+import fruit from '../assets/fruits.jpg';
 import testimonialImage1 from '../assets/user.jpg';
 import testimonialImage2 from '../assets/user.jpg';
 import logo from '../assets/logo.png';
@@ -77,14 +77,14 @@ function HomePage() {
             className="rounded-xl shadow-lg overflow-hidden bg-white"
           >
             <img
-              src={image1}
+              src={fruit}
               alt="Farmer listing produce"
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">Farmers List Their Produce</h3>
               <p className="text-gray-600">
-                Farmers can easily list their produce using Bengali voice or text input. Accessible and simple for all.
+                Farmers can easily list their produce using <strong>Bengali voice or text input</strong>. Accessible and simple for all.
               </p>
             </div>
           </motion.div>
@@ -95,14 +95,14 @@ function HomePage() {
             className="rounded-xl shadow-lg overflow-hidden bg-white"
           >
             <img
-              src={image2}
+              src={image1}
               alt="Buyer finding produce"
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">Buyers Find Local Produce</h3>
               <p className="text-gray-600">
-                Buyers can discover fresh, local produce within a 5–10km radius. Trade directly, without middlemen.
+                Buyers can discover fresh, local produce within a <strong>5–10km radius</strong>. Trade directly, without middlemen.
               </p>
             </div>
           </motion.div>
@@ -113,14 +113,14 @@ function HomePage() {
             className="rounded-xl shadow-lg overflow-hidden bg-white"
           >
             <img
-              src={image3}
+              src={cash}
               alt="Barter and cash trade"
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold mb-2">Barter or Cash Transactions</h3>
               <p className="text-gray-600">
-                Trade goods for cash or barter items. Flexibility for both buyers and sellers.
+                Trade goods for <strong>cash or barter items</strong>. Flexibility for both buyers and sellers.
               </p>
             </div>
           </motion.div>
@@ -138,7 +138,7 @@ function HomePage() {
           >
             <h3 className="text-xl font-semibold mb-4">Bengali Voice Input</h3>
             <p className="text-gray-800">
-              Farmers can list their produce using intuitive Bengali voice input, making the platform accessible to all.
+              Farmers can list their produce using <strong>intuitive Bengali voice input</strong>, making the platform accessible to all.
             </p>
           </motion.div>
 
@@ -149,7 +149,7 @@ function HomePage() {
           >
             <h3 className="text-xl font-semibold mb-4">Hyper-Local Connectivity</h3>
             <p className="text-gray-800">
-              Focused on connecting buyers and sellers within a 5–10km radius for quick and easy transactions.
+              Focused on connecting buyers and sellers within a <strong> 5–10km radius </strong>for quick and easy transactions.
             </p>
           </motion.div>
 
@@ -160,7 +160,7 @@ function HomePage() {
           >
             <h3 className="text-xl font-semibold mb-4">Barter Support</h3>
             <p className="text-gray-800">
-              Offers flexibility with both cash and barter transactions, enabling trade even without monetary exchange.
+              Offers flexibility with both <strong>cash and barter transactions</strong>, enabling trade even without monetary exchange.
             </p>
           </motion.div>
         </div>
@@ -180,7 +180,7 @@ function HomePage() {
                 className="w-16 h-16 rounded-full"
               />
               <div>
-                <h3 className="font-semibold text-lg">John Doe</h3>
+                <h3 className="font-semibold text-lg">Sourav Mukherjee</h3>
                 <p className="text-sm text-gray-500">Farmer</p>
               </div>
             </div>
@@ -197,7 +197,7 @@ function HomePage() {
                 className="w-16 h-16 rounded-full"
               />
               <div>
-                <h3 className="font-semibold text-lg">Jane Smith</h3>
+                <h3 className="font-semibold text-lg">Arindam Chatterjee </h3>
                 <p className="text-sm text-gray-500">Buyer</p>
               </div>
             </div>

@@ -62,11 +62,10 @@ function TransactionHistoryPage() {
                     <td className="py-3 px-4 text-gray-700">{transaction.item}</td>
                     <td className="py-3 px-4 text-gray-700">{transaction.amount}</td>
                     <td
-                      className={`py-3 px-4 ${
-                        transaction.status === "Completed"
+                      className={`py-3 px-4 ${transaction.status === "Completed"
                           ? "text-green-600"
                           : "text-yellow-500"
-                      } font-semibold`}
+                        } font-semibold`}
                     >
                       {transaction.status}
                     </td>
